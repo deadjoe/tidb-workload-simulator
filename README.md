@@ -7,9 +7,9 @@ Appreciate for MemSQL team to built such a handy tool for generating multi proce
 
 What did in this fork:
 
-1. adjust the code to support TiDB.
+1. adjusted the code to support TiDB.
 2. fixed one dependency problem on client lib.
-3. build a docker image so that can be used more easier than worry about thos "pythonblem"  
+3. built a docker image so that can be used more easier than worry about thos "pythonblem"  
 
 You can easily configure your workload concurrency , query commands via Web UI and save the config for backup or future use. Also A QPS graph monitors the real time query work load in clear way.  An embedded  SQL  command console makes the life much easier when try to add/modify the tables when doing the testing.
 
