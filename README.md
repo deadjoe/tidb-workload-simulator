@@ -46,8 +46,9 @@ Running the workload simulator
 --------------------
 + **Start the server via docker**
 
+```
 docker run -d -p 9000:9000 deadjoe/tidb-workload-simulator
-
+```
 
 + **Start the server in command**
 
