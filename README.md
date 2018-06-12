@@ -5,6 +5,12 @@ The TiDB Workload Simulator is TOTALLY a fork from https://github.com/memsql/wor
 
 Appreciate for MemSQL team to built such a handy tool for generating multi processes workload pressure in a visual way.
 
+What did in this fork:
+
+1. adjust the code to support TiDB.
+2. fixed one dependency problem on client lib.
+3. build a docker image so that can be used more easier than worry about thos "pythonblem"  
+
 You can easily configure your workload concurrency , query commands via Web UI and save the config for backup or future use. Also A QPS graph monitors the real time query work load in clear way.  An embedded  SQL  command console makes the life much easier when try to add/modify the tables when doing the testing.
 
 ![alt text](https://github.com/deadjoe/tidb-workload-simulator/blob/master/screenshots.png)
@@ -26,7 +32,7 @@ Installing the workload simulator
 + **Make sure you have python dev tools and pip installed**
 
 ```
-sudo apt-get install python-dev python-setuptools libmysqlclient-dev
+sudo apt-get install python-dev python-setuptools libmariadbclient-dev
 sudo easy_install pip
 ```
 
@@ -38,8 +44,12 @@ sudo pip install flask sqlalchemy MySQL-python simplejson
 
 Running the workload simulator
 --------------------
++ **Start the server via docker**
 
-+ **Start the server**
+docker run -d -p 9000:9000 deadjoe/tidb-workload-simulator
+
+
++ **Start the server in command**
 
 ```
 python runner
