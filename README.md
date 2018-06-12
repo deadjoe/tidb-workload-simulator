@@ -26,7 +26,7 @@ All command-line instructions assume that your working directory is the original
 Tested on  RHEL7.x/CentOS 7.x and OSX (brew , easy_install, pip required)
 
 
-Installing the workload simulator
+Installing the workload simulator (Do not required if you running in docker way)
 ---------------------------------
 
 + **Make sure you have python dev tools and pip installed**
@@ -44,7 +44,7 @@ sudo pip install flask sqlalchemy MySQL-python simplejson
 
 Running the workload simulator
 --------------------
-+ **Start the server via docker**
++ **Start the server via docker(Strong Suggested)**
 
 ```
 docker run -d -p 9000:9000 deadjoe/tidb-workload-simulator
