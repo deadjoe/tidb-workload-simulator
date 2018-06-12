@@ -1,4 +1,4 @@
-[TiDB  Workload Simulator]
+TiDB  Workload Simulator
 ====================
 
 The TiDB Workload Simulator is TOTALLY a fork from https://github.com/memsql/workload-simulator.  
@@ -7,6 +7,7 @@ Appreciate for MemSQL team to built such a handy tool for generating multi proce
 
 You can easily configure your workload concurrency , query commands via Web UI and save the config for backup or future use. Also A QPS graph monitors the real time query work load in clear way.  An embedded  SQL  command console makes the life much easier when try to add/modify the tables when doing the testing.
 
+![alt text](https://github.com/deadjoe/tidb-workload-simulator/blob/master/screenshots.png)
 
 
 The original support of MySQL makes the way easier for me to make the tool support TiDB distributed SQL database.
