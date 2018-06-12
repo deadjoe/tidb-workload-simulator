@@ -24,9 +24,10 @@ Requirements
 All command-line instructions assume that your working directory is the original location of this README file.
 
 Tested on  RHEL7.x/CentOS 7.x and OSX (brew , easy_install, pip required)
+The latest Docker packages required if you run it in docker.
 
 
-Installing the workload simulator (Do not required if you running in docker way)
+Installing the workload simulator (Do not required if you run it in docker way)
 ---------------------------------
 
 + **Make sure you have python dev tools and pip installed**
